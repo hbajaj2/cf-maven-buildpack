@@ -79,7 +79,7 @@ if __name__ == '__main__':
 			.environment_variable()
                 .export()
                 .name('JAVA_OPTS')
-                .value('"-XX:PermSize=512m -XX:MaxPermSize=512m"')
+                .value('"-XX:PermSize=1024m -XX:MaxPermSize=1024m"')
             .command()
                 .run('$M2_HOME/bin/mvn')
                 .with_argument('-Dmaven.repo.local=$HOME/repo')
